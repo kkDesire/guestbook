@@ -52,8 +52,8 @@ class CommentCrudController extends AbstractCrudController
         ;
 
         $createAt = DateTimeField::new('createAt')->setFormTypeOptions([
-            'html5' => true,
-            'years' => range(date('Y'), date(('Y')) + 5),
+            'html5' => false,
+            'years' => range(date('Y'), date('Y') + 5),
             'widget' => 'single_text',
         ]);
 
